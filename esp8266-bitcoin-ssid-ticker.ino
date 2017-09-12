@@ -42,8 +42,8 @@ void loop() {
       DynamicJsonBuffer jsonBuffer(1100);
       JsonObject& root = jsonBuffer.parseObject(payload);
       JsonObject& bpi = root["bpi"];
-      JsonObject& bpi_EUR = bpi["EUR"];
-      int last = bpi_EUR["rate_float"];  
+      JsonObject& bpi_USD = bpi["USD"];
+      int last = bpi_USD["rate_float"];  
       
       String sSSID = "📈 1 bitcoin = € ";
       sSSID += last;
