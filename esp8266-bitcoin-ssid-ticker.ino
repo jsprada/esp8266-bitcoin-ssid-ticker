@@ -45,7 +45,7 @@ void loop() {
       JsonObject& bpi_USD = bpi["USD"];
       int last = bpi_USD["rate_float"];  
       
-      String sSSID = "📈 1 bitcoin = $ ";
+      String sSSID = "1 bitcoin = $ ";
       sSSID += last;
       sSSID += ",-";
       
@@ -54,7 +54,7 @@ void loop() {
       Serial.print("Failed to request coindesk API - is the internet connection active? Return code: ");
       Serial.println(code);
       
-      WiFi.softAP("😥 Help me I'm broken!");
+      WiFi.softAP("Hodl on, something's wrong!");
     }
     
     http.end();
