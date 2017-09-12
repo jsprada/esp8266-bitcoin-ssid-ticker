@@ -45,7 +45,7 @@ void loop() {
       JsonObject& bpi_USD = bpi["USD"];
       int last = bpi_USD["rate_float"];  
       
-      String sSSID = "📈 1 bitcoin = € ";
+      String sSSID = "📈 1 bitcoin = $ ";
       sSSID += last;
       sSSID += ",-";
       
